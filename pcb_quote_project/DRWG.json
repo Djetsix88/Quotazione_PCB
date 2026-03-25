@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "board": {
+      "width_mm": 180.0,
+      "height_mm": 385.0,
+      "holes": [
+        {
+          "diameter_mm": 3.2,
+          "metallization_mm": 6.0,
+          "count": 15
+        },
+        {
+          "diameter_mm": 12.0,
+          "metallization_mm": 15.0,
+          "count": 4
+        }
+      ],
+      "keepouts": []
+    },
+    "components": {
+      "bga_count": 1,
+      "bga_total_pins_effective": 1150,
+      "min_bga_pitch_mm": 0.8,
+      "passives": 500,
+      "actives": 50,
+      "critical": 10,
+      "connectors": 2,
+      "layers": 16,
+      "hdi": false,
+      "tht": false
+    },
+    "highspeed": {
+      "interfaces": [
+        {
+          "name": "JESD204",
+          "data_rate_gbps": 10.0,
+          "diff_pairs": 32,
+          "se_lines": 0,
+          "match_ps": 0.5
+        },
+        {
+          "name": "DAC",
+          "data_rate_gbps": 10.0,
+          "diff_pairs": 16,
+          "se_lines": 0,
+          "match_ps": 0.5
+        },
+        {
+          "name": "ADC",
+          "data_rate_gbps": 10.0,
+          "diff_pairs": 16,
+          "se_lines": 0,
+          "match_ps": 0.5
+        },
+        {
+          "name": "DAC",
+          "data_rate_gbps": 10.0,
+          "diff_pairs": 0,
+          "se_lines": 8,
+          "match_ps": 0.5
+        },
+        {
+          "name": "ADC",
+          "data_rate_gbps": 10.0,
+          "diff_pairs": 0,
+          "se_lines": 8,
+          "match_ps": 0.5
+        },
+        {
+          "name": "HMC",
+          "data_rate_gbps": 10.0,
+          "diff_pairs": 8,
+          "se_lines": 0,
+          "match_ps": 0.5
+        },
+        {
+          "name": "CLK",
+          "data_rate_gbps": 0.5,
+          "diff_pairs": 0,
+          "se_lines": 10,
+          "match_ps": 0.0
+        },
+        {
+          "name": "ETH",
+          "data_rate_gbps": 1.0,
+          "diff_pairs": 8,
+          "se_lines": 0,
+          "match_ps": 1.0
+        },
+        {
+          "name": "AURORA",
+          "data_rate_gbps": 10.0,
+          "diff_pairs": 8,
+          "se_lines": 0,
+          "match_ps": 0.5
+        },
+        {
+          "name": "DDR4",
+          "data_rate_gbps": 2.0,
+          "diff_pairs": 4,
+          "se_lines": 0,
+          "match_ps": 0.5
+        },
+        {
+          "name": "DDR4",
+          "data_rate_gbps": 2.0,
+          "diff_pairs": 0,
+          "se_lines": 32,
+          "match_ps": 0.5
+        },
+        {
+          "name": "SPI",
+          "data_rate_gbps": 1.0,
+          "diff_pairs": 0,
+          "se_lines": 5,
+          "match_ps": 1.0
+        }
+      ]
+    },
+    "buffer_pct": 0.2,
+    "week_hours": 40.0,
+    "tariffs": {
+      "layout_eur_per_h": 70.0,
+      "si_pi_eur_per_h": 80.0
+    }
+  },
+  "coeffs": {
+    "sys_study_system_h": 8.0,
+    "sys_setup_pcb_h": 4.0,
+    "sys_mech_study_h": 6.0,
+    "sys_dfm_documentation_h": 4.0,
+    "comps_signal_complexity": "Media",
+    "comps_power_complexity": "Bassa",
+    "comps_rf_complexity": "Bassa",
+    "comps_highspeed_complexity": "Media",
+    "k_place_bga_base_h": 6.0,
+    "k_place_per_bga_h": 2.0,
+    "k_place_pins_per_100_min": 60.0,
+    "k_place_passive_min": 0.12,
+    "k_place_active_min": 1.8,
+    "k_place_critical_min": 12.0,
+    "k_place_connector_min": 6.0,
+    "k_hdi_multiplier": 1.15,
+    "k_route_std_base_h": 20.0,
+    "k_route_density_scale_h": 18.0,
+    "k_route_trace_min": 0.6,
+    "k_route_diff_pair_min": 33.0,
+    "k_route_se_min": 10.8,
+    "k_si_base_h": 12.0,
+    "k_si_per_interface_min": 240.0,
+    "k_si_rate_multiplier": 1.0,
+    "k_cleanup_pct": 0.12
+  }
+}

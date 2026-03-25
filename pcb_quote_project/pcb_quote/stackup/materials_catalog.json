@@ -1,0 +1,266 @@
+{
+  "schema_version": 2,
+  "materials": [
+    {
+      "name": "FR-4 (generic)",
+      "pcb_types": ["Rigid"],
+      "dk_nominal_1ghz": 4.2,
+      "df_nominal_1ghz": 0.018,
+      "tg_c": 150,
+      "td_c": 300,
+      "z_cte_ppm_c": 70,
+      "copper_foils": ["ED", "VLP"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "1080", "thickness_mm": 0.1, "resin_content_pct": 70, "note": "fine weave"},
+        {"style": "2116", "thickness_mm": 0.18, "resin_content_pct": 55, "note": "general purpose"},
+        {"style": "7628", "thickness_mm": 0.25, "resin_content_pct": 45, "note": "coarse weave"}
+      ],
+      "core_options_mm": [0.2, 0.3, 0.5, 0.8, 1.0],
+      "notes": "Baseline FR-4 for cost-optimized builds."
+    },
+    {
+      "name": "IT-180A",
+      "pcb_types": ["Rigid", "Rigid-Flex", "RF"],
+      "dk_nominal_1ghz": 4.1,
+      "df_nominal_1ghz": 0.014,
+      "copper_foils": ["ED"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "106", "thickness_mm": 0.0508, "resin_content_pct": 72, "note": "ITEQ IT-180A prepreg"},
+        {"style": "1067", "thickness_mm": 0.061, "resin_content_pct": 71, "note": "ITEQ IT-180A prepreg"},
+        {"style": "1080", "thickness_mm": 0.0711, "resin_content_pct": 62, "note": "ITEQ IT-180A prepreg"},
+        {"style": "1086", "thickness_mm": 0.0762, "resin_content_pct": 62, "note": "ITEQ IT-180A prepreg"},
+        {"style": "2113", "thickness_mm": 0.0965, "resin_content_pct": 56, "note": "ITEQ IT-180A prepreg"},
+        {"style": "2116", "thickness_mm": 0.1168, "resin_content_pct": 53, "note": "ITEQ IT-180A prepreg"},
+        {"style": "1506", "thickness_mm": 0.1626, "resin_content_pct": 48, "note": "ITEQ IT-180A prepreg"},
+        {"style": "7628", "thickness_mm": 0.188, "resin_content_pct": 43, "note": "ITEQ IT-180A prepreg"},
+        {"style": "7628HR", "thickness_mm": 0.2083, "resin_content_pct": 50, "note": "ITEQ IT-180A prepreg"}
+      ],
+      "core_options_mm": [0.0508, 0.0635, 0.0762, 0.1016, 0.127, 0.1524, 0.1778, 0.2032, 0.254, 0.3048, 0.3556, 0.5334, 0.7112, 0.9398],
+      "notes": "ITEQ IT-180A (core inches->mm; prepreg mil->mm)."
+    },
+    {
+      "name": "Isola 370HR",
+      "pcb_types": ["Rigid"],
+      "dk_nominal_1ghz": 4.0,
+      "df_nominal_1ghz": 0.016,
+      "tg_c": 180,
+      "td_c": 340,
+      "z_cte_ppm_c": 55,
+      "copper_foils": ["ED", "VLP", "RT"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "1080", "thickness_mm": 0.09, "resin_content_pct": 72, "note": "fine weave"},
+        {"style": "2116", "thickness_mm": 0.17, "resin_content_pct": 56, "note": "general purpose"},
+        {"style": "7628", "thickness_mm": 0.24, "resin_content_pct": 45, "note": "coarse weave"}
+      ],
+      "core_options_mm": [0.1, 0.2, 0.3, 0.5, 0.8, 1.0],
+      "notes": "High-Tg FR-4, widely used."
+    },
+    {
+      "name": "Isola FR408HR",
+      "pcb_types": ["Rigid"],
+      "dk_nominal_1ghz": 3.7,
+      "df_nominal_1ghz": 0.012,
+      "tg_c": 180,
+      "td_c": 330,
+      "z_cte_ppm_c": 55,
+      "copper_foils": ["ED", "VLP"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "1080", "thickness_mm": 0.09, "resin_content_pct": 72, "note": "fine weave"},
+        {"style": "2116", "thickness_mm": 0.17, "resin_content_pct": 56, "note": "general purpose"},
+        {"style": "3313", "thickness_mm": 0.11, "resin_content_pct": 65, "note": "fine weave"},
+        {"style": "7628", "thickness_mm": 0.24, "resin_content_pct": 45, "note": "coarse weave"}
+      ],
+      "core_options_mm": [0.1, 0.2, 0.3, 0.5, 0.8],
+      "notes": "Lower-loss FR-4 for high-speed digital."
+    },
+    {
+      "name": "Panasonic Megtron 6",
+      "pcb_types": ["Rigid"],
+      "dk_nominal_1ghz": 3.4,
+      "df_nominal_1ghz": 0.004,
+      "tg_c": 185,
+      "td_c": 400,
+      "z_cte_ppm_c": 45,
+      "copper_foils": ["VLP", "RT"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "1080", "thickness_mm": 0.09, "resin_content_pct": 70, "note": "low loss"},
+        {"style": "2116", "thickness_mm": 0.16, "resin_content_pct": 55, "note": "low loss"},
+        {"style": "7628", "thickness_mm": 0.23, "resin_content_pct": 45, "note": "low loss"}
+      ],
+      "core_options_mm": [0.1, 0.2, 0.3, 0.5],
+      "notes": "Very low loss laminate for 25G/56G-class links."
+    },
+    {
+      "name": "Tuc TU-872 SLK",
+      "pcb_types": ["Rigid"],
+      "dk_nominal_1ghz": 3.8,
+      "df_nominal_1ghz": 0.01,
+      "tg_c": 170,
+      "td_c": 330,
+      "z_cte_ppm_c": 55,
+      "copper_foils": ["ED", "VLP"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "1080", "thickness_mm": 0.1, "resin_content_pct": 70, "note": ""},
+        {"style": "2116", "thickness_mm": 0.18, "resin_content_pct": 55, "note": ""},
+        {"style": "7628", "thickness_mm": 0.25, "resin_content_pct": 45, "note": ""}
+      ],
+      "core_options_mm": [0.2, 0.3, 0.5, 0.8],
+      "notes": "Mid-loss material family."
+    },
+    {
+      "name": "Rogers RO4350B",
+      "pcb_types": ["RF", "Rigid"],
+      "dk_nominal_1ghz": 3.48,
+      "df_nominal_1ghz": 0.0037,
+      "tg_c": 280,
+      "td_c": 450,
+      "z_cte_ppm_c": 32,
+      "copper_foils": ["ED", "RA", "VLP"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "RO4450F", "thickness_mm": 0.1, "resin_content_pct": 60, "note": "bondply / prepreg equivalent"}
+      ],
+      "core_options_mm": [0.1, 0.2, 0.3, 0.5, 0.76, 1.52],
+      "notes": "Hydrocarbon/ceramic RF laminate (common)."
+    },
+    {
+      "name": "Rogers RO4003C",
+      "pcb_types": ["RF", "Rigid"],
+      "dk_nominal_1ghz": 3.55,
+      "df_nominal_1ghz": 0.0027,
+      "tg_c": 280,
+      "td_c": 450,
+      "z_cte_ppm_c": 46,
+      "copper_foils": ["ED", "VLP"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "RO4450F", "thickness_mm": 0.1, "resin_content_pct": 60, "note": "bondply"}
+      ],
+      "core_options_mm": [0.2, 0.3, 0.5, 0.81, 1.52],
+      "notes": "Lower-cost RF laminate vs 4350B."
+    },
+    {
+      "name": "Taconic RF-35",
+      "pcb_types": ["RF", "Rigid"],
+      "dk_nominal_1ghz": 3.5,
+      "df_nominal_1ghz": 0.0018,
+      "tg_c": 200,
+      "td_c": 400,
+      "z_cte_ppm_c": 35,
+      "copper_foils": ["ED", "VLP"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "Bondply", "thickness_mm": 0.1, "resin_content_pct": 60, "note": "generic bondply"}
+      ],
+      "core_options_mm": [0.2, 0.3, 0.5, 0.79, 1.58],
+      "notes": "RF/PTFE-ish family (depending on variant)."
+    },
+    {
+      "name": "Arlon 85N",
+      "pcb_types": ["RF", "Rigid"],
+      "dk_nominal_1ghz": 3.25,
+      "df_nominal_1ghz": 0.004,
+      "tg_c": 170,
+      "td_c": 350,
+      "z_cte_ppm_c": 50,
+      "copper_foils": ["ED", "VLP"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "Bondply", "thickness_mm": 0.1, "resin_content_pct": 60, "note": "generic bondply"}
+      ],
+      "core_options_mm": [0.2, 0.3, 0.5, 0.8],
+      "notes": "Low-loss-ish laminate option (varies by datasheet)."
+    },
+    {
+      "name": "Nelco N4000-13EP",
+      "pcb_types": ["Rigid"],
+      "dk_nominal_1ghz": 3.7,
+      "df_nominal_1ghz": 0.009,
+      "tg_c": 180,
+      "td_c": 340,
+      "z_cte_ppm_c": 55,
+      "copper_foils": ["ED", "VLP"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "1080", "thickness_mm": 0.09, "resin_content_pct": 72, "note": ""},
+        {"style": "2116", "thickness_mm": 0.17, "resin_content_pct": 56, "note": ""},
+        {"style": "7628", "thickness_mm": 0.24, "resin_content_pct": 45, "note": ""}
+      ],
+      "core_options_mm": [0.1, 0.2, 0.3, 0.5, 0.8],
+      "notes": "Low-loss family used for higher-speed digital."
+    },
+    {
+      "name": "Shengyi S1000-2M",
+      "pcb_types": ["Rigid"],
+      "dk_nominal_1ghz": 3.8,
+      "df_nominal_1ghz": 0.008,
+      "tg_c": 170,
+      "td_c": 340,
+      "z_cte_ppm_c": 55,
+      "copper_foils": ["ED", "VLP"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "1080", "thickness_mm": 0.09, "resin_content_pct": 72, "note": ""},
+        {"style": "2116", "thickness_mm": 0.17, "resin_content_pct": 56, "note": ""},
+        {"style": "7628", "thickness_mm": 0.24, "resin_content_pct": 45, "note": ""}
+      ],
+      "core_options_mm": [0.1, 0.2, 0.3, 0.5, 0.8],
+      "notes": "Low-loss-ish FR-4 family."
+    },
+    {
+      "name": "Polyimide",
+      "pcb_types": ["Rigid-Flex", "Flex"],
+      "dk_nominal_1ghz": 3.4,
+      "df_nominal_1ghz": 0.008,
+      "tg_c": 250,
+      "td_c": 450,
+      "z_cte_ppm_c": 20,
+      "copper_foils": ["RA", "RT"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "Adhesiveless", "thickness_mm": 0.05, "resin_content_pct": 0, "note": "flex base film"},
+        {"style": "Bondply", "thickness_mm": 0.08, "resin_content_pct": 60, "note": "generic bondply"}
+      ],
+      "core_options_mm": [0.05, 0.1, 0.2],
+      "notes": "Flex / rigid-flex base material family."
+    },
+    {
+      "name": "PTFE (generic)",
+      "pcb_types": ["RF"],
+      "dk_nominal_1ghz": 2.1,
+      "df_nominal_1ghz": 0.0009,
+      "tg_c": 250,
+      "td_c": 500,
+      "z_cte_ppm_c": 200,
+      "copper_foils": ["RA", "VLP"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "PTFE glass", "thickness_mm": 0.1, "resin_content_pct": 50, "note": "generic PTFE prepreg"}
+      ],
+      "core_options_mm": [0.1, 0.2, 0.3, 0.5, 0.8, 1.5],
+      "notes": "Generic PTFE class for very low loss RF."
+    },
+    {
+      "name": "LCP (Liquid Crystal Polymer)",
+      "pcb_types": ["RF", "Rigid-Flex", "Flex"],
+      "dk_nominal_1ghz": 3.0,
+      "df_nominal_1ghz": 0.002,
+      "tg_c": 280,
+      "td_c": 500,
+      "z_cte_ppm_c": 17,
+      "copper_foils": ["RA", "VLP"],
+      "prepreg_default_plies": 2,
+      "prepreg_styles": [
+        {"style": "LCP film", "thickness_mm": 0.05, "resin_content_pct": 0, "note": "film dielectric"}
+      ],
+      "core_options_mm": [0.05, 0.1, 0.2],
+      "notes": "Great for mmWave/antenna-in-package style builds (conceptual catalog entry)."
+    }
+  ]
+}
